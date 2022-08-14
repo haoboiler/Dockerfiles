@@ -10,6 +10,7 @@ deb http://mirrors.163.com/ubuntu/ focal-backports main restricted universe mult
             && apt update && apt install -y \ 
 			openssh-server \
 			vim \
+            && apt-get update -y && apt install -y git\
 			&& apt clean \
 			&& rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp* \
 			&& echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
