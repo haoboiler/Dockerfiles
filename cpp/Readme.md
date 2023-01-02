@@ -1,6 +1,7 @@
 # Dockerfile for cpp in Linux platform
 
 ## In windows docker
+`docker pull centos/systemd`
 
 `docker build -f .\DockerfileCentosC++ -t centos/cpp:0.1 .`
 
@@ -9,3 +10,4 @@
 In docker
 
 `systemctl start sshd`
+`passwd {passwd}`

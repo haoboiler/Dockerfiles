@@ -2,5 +2,7 @@ FROM centos/systemd
 RUN yum -y install openssh-server git \
     && yum -y install gcc gcc-c++ kernel-devel \
     && ssh-keygen -A \
+    && cd /home \
+    && mkdir ./guokh
 EXPOSE 22
 CMD tail -f

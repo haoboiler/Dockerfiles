@@ -1,0 +1,7 @@
+FROM centos/systemd
+RUN yum -y install openssh-server git \
+    && yum -y install java-1.8.0-openjdk \
+    && yum -y install java-1.8.0-openjdk-devel \
+    && ssh-keygen -A
+EXPOSE 22
+CMD tail -f
